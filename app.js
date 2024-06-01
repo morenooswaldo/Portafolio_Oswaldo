@@ -64,7 +64,7 @@ function efectoHabilidades() {
   }
 }
 
-//DETECTOA EL SCRLLING PARA APLICAR LA ANIMACION DE HABILIDADES
+//DETECTOA EL SCROLLING PARA APLICAR LA ANIMACION DE HABILIDADES
 window.onscroll = function () {
   efectoHabilidades();
 };
@@ -113,3 +113,14 @@ function descargaPdf() {
   link.click();
   document.body.removeChild(link);
 }
+
+//FUNCION PARA PROYECTOS EN DISPOSITIVOS TACTILES
+document.querySelectorAll(".proyectos .galeria .item").forEach((item) => {
+  item.addEventListener("touchstart", function () {
+    this.classList.add("tocado");
+  });
+
+  item.addEventListener("touchend", function () {
+    this.classList.remove("tocado");
+  });
+});

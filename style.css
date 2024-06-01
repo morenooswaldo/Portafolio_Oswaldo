@@ -381,6 +381,19 @@ body {
   top: 0;
 }
 
+.proyectos .galeria .item .tocado .info {
+  opacity: 1;
+  top: 0;
+}
+
+.proyectos .galeria .item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #8d8d8d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /*SECCION CONTACTO*/
 
 .contacto {
