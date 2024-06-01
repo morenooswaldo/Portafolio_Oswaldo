@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatble" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+      integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- SECCION INICIO -->
+    <span class="sombra">
+      <section id="inicio" class="inicio">
+        <div class="contenido">
+          <header>
+            <div class="logo">
+              <i class="bi bi-bug"></i>
+              <h1>Oswaldo Moreno</h1>
+            </div>
+            <nav id="nav" class="">
+              <a href="#inicio">Inicio</a>
+              <a href="#conocimiento">Conocimientos</a>
+              <a href="#habilidades">Habilidades</a>
+              <a href="#proyectos">Proyectos</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+
+            <!-- ICONO DEL MENU RESPONSIVE -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="redes">
+              <a href="https://github.com/morenooswaldo" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/oswaldomorenog"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </header>
+
+          <div class="fila">
+            <div class="col">
+              <h2>Desarrollador Frontend</h2>
+              <p>
+                Experiencia en programación de páginas web y dominio del
+                lenguaje Python. Mi compromiso con la excelencia es evidente en
+                cada proyecto que emprendo, asegurando que constantemente
+                entregue resultados superiores e impulse el éxito.
+              </p>
+              <button class="btn btn-1" onclick="descargaPdf()">
+                Descargar CV
+              </button>
+            </div>
+            <div class="col">
+              <div class="contenedor-img">
+                <img src="img/foto-inicio.png" alt="Foto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </span>
+
+    <!-- SECCION CONOCIMIENTOS -->
+    <section id="conocimiento" class="conocimiento">
+      <div class="fila">
+        <div class="col">
+          <div class="card">
+            <div class="icono color1">
+              <div class="circulo">
+                <i class="fa-solid fa-code"></i>
+              </div>
+            </div>
+            <h3>Diseño Web</h3>
+            <p>
+              Desarrollador web front-end con sólidas habilidades en HTML, CSS,
+              JavaScript y React. Crea interfaces web atractivas, funcionales y
+              escalables, con una excelente experiencia de usuario. Profesional
+              creativo, innovador y adaptable, siempre buscando nuevas
+              soluciones para optimizar proyectos. Apasionado por el desarrollo
+              web y en constante actualización de sus conocimientos.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="icono color2">
+              <div class="circulo">
+                <i class="fa-brands fa-python"></i>
+              </div>
+            </div>
+            <h3>Desarrollador Python</h3>
+            <p>
+              Desarrollador Python con dominio del lenguaje y frameworks como
+              Django para la creación de backends robustos y escalables. Con
+              conocimientos en Inteligencia Artificial y Machine Learning le
+              permiten incorporar capacidades de análisis de datos y toma de
+              decisiones inteligentes en las aplicaciones.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="icono color3">
+              <div class="circulo">
+                <i class="fa-solid fa-database"></i>
+              </div>
+            </div>
+            <h3>Base de datos</h3>
+            <p>
+              Manejo experto del lenguaje SQL y PHP para la gestión y
+              manipulación de datos en bases de datos relacionales. Posee amplia
+              experiencia en la creación, administración y mantenimiento de
+              bases de datos MySQL utilizando phpMyAdmin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+      <div class="contenedor-habi">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="95">95%</div>
+                <h2>HTML & CSS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="90">90%</div>
+                <h2>JavaScript</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="89">89%</div>
+                <h2>Python</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="60">60%</div>
+                <h2>PHP</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="78">78%</div>
+                <h2>React</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="score">
+              <div class="box">
+                <div class="chart" data-percent="95">95%</div>
+                <h2>Ingles</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+
+      <nav>
+        <a
+          href="javascript:void(0)"
+          class="borde"
+          id="item"
+          onclick="verCategoria('item')"
+          >Todos</a
+        >
+        <a
+          href="javascript:void(0)"
+          class=""
+          id="html"
+          onclick="verCategoria('html')"
+          >Html & CSS</a
+        >
+        <a
+          href="javascript:void(0)"
+          class=""
+          id="python"
+          onclick="verCategoria('python')"
+          >Python</a
+        >
+        <a
+          href="javascript:void(0)"
+          class=""
+          id="react"
+          onclick="verCategoria('react')"
+          >React</a
+        >
+      </nav>
+
+      <div class="galeria">
+        <div class="item html">
+          <img src="img/Omshop e-commerce.png" alt="" />
+          <div class="info">
+            <h3>E-Commerce</h3>
+            <span>html</span><span>CSS</span><span>javascript</span>
+            <a href="https://morenooswaldo.github.io/OMShop/" target="_blank"
+              >Ver proyecto</a
+            >
+          </div>
+        </div>
+        <div class="item react">
+          <img src="img/AI_blog.png" alt="" />
+          <div class="info">
+            <h3>Chat GPT-3 Blog</h3>
+            <span>html</span><span>CSS</span><span>javascript</span
+            ><span>React</span>
+            <a href="https://gpt-3blog.netlify.app/" target="_blank"
+              >Ver proyecto</a
+            >
+          </div>
+        </div>
+        <div class="item react">
+          <img src="img/trabajo3.png" alt="" />
+          <div class="info">
+            <h3>Nombre del proyecto</h3>
+            <span>html</span><span>CSS</span><span>javascript</span>
+            <a href="#">Ver proyecto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+      <div class="contenedor-contacto">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <div class="col">
+            <div class="info">
+              <h3>Email:</h3>
+              <p>morenooswaldoe@gmail.com</p>
+            </div>
+            <!-- <div class="info">
+              <h3>Telefono:</h3>
+              <p>+584444444</p>
+            </div> -->
+            <div class="info">
+              <h3>Pais:</h3>
+              <p>Venezuela</p>
+            </div>
+            <div class="info">
+              <h3>Ciudad:</h3>
+              <p>Maracaibo</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contenedor-img-contacto">
+              <img src="img/pefil_redonda.png" alt="foto-perfil" />
+            </div>
+            <!-- <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Correo" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <input type="submit" value="Enviar" class="btn" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
